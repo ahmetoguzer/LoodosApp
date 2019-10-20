@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "682247239233",
+    "firebase_url": "https://loodos-e083f.firebaseio.com",
+    "project_id": "loodos-e083f",
+    "storage_bucket": "loodos-e083f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682247239233:android:7a768141d6f47498b4f8c0",
+        "android_client_info": {
+          "package_name": "com.app.loodosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682247239233-vuqba7fb9kl3k2kt8ihsv2caqm81ao18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4GB7UcttBBic29lePN-muu54V9467fiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682247239233-vuqba7fb9kl3k2kt8ihsv2caqm81ao18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

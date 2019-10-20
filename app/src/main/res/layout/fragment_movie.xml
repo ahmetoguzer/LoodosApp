@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+    <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:hint="Movie"
+            android:paddingLeft="8dp"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:background="@drawable/bg_searchview"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapSentences"
+            android:fontFamily="@font/ralewaymedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSearh" android:layout_marginStart="3dp"/>
+    <ImageButton
+            android:id="@+id/btnSearh"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_search"
+            android:tint="@android:color/white"
+            android:background="@drawable/bg_searh_button"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toEndOf="@+id/etSearch"
+            android:layout_marginStart="5dp" android:layout_marginEnd="3dp"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toBottomOf="@+id/etSearch"
+            android:id="@+id/recyclerView"
+            tools:ignore="MissingConstraints">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+            android:id="@+id/tvNotFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="movie not found"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:fontFamily="@font/ralewaymedium"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>
