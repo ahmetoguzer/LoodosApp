@@ -20,7 +20,7 @@ public class AlgorithmExample {
 //      n = 5 -->> result : "abbcccaaeeeeb b*****ca ccab"
 //      n = 9 -->> result : "abbcccaaeeeeb bfffffca ccab"
 
-        changeString(mString,5);
+        changeString(mString,3);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -32,7 +32,7 @@ public class AlgorithmExample {
             if(mCharArray[i] == mCharArray[i-1]){
                 count++;
                 if(count >= repeatCount)
-                    mCharMap.put(i - 1,count);
+                    mCharMap.put(i ,count);
             } else
                 count = 1;
         }
@@ -42,7 +42,7 @@ public class AlgorithmExample {
             int mCharCount = entry.getValue();
             // Java 8 stream APIs using for n-times string
             String s = IntStream.range(0, mCharCount).mapToObj(i ->  "*").collect(Collectors.joining(""));
-            mStr = mStr.substring(0, mCharPos - mCharCount + 2) + s + mStr.substring(mCharPos + 2, mStr.length());
+            mStr = mStr.substring(0, mCharPos - mCharCount + 1) + s + mStr.substring(mCharPos + 1, mStr.length());
         }
         System.out.println(mStr);
     }
